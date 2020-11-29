@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://newsapi.org/sources -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>List of news source APIs available - News API</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get live headlines and images in JSON format from over 50,000 news sources.">
+    <meta name="keywords" content="news api, api, news headlines">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="List of news source APIs available - News API">
+    <meta itemprop="description" content="Get live headlines and images in JSON format from over 50,000 news sources.">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="List of news source APIs available - News API">
+    <meta name="twitter:description"
+        content="Get live headlines and images in JSON format from over 50,000 news sources.">
+    <meta name="twitter:site" content="@NewsAPIorg">
+    <meta name="twitter:creator" content="@NewsAPIorg">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="List of news source APIs available - News API">
+    <meta name="og:description" content="Get live headlines and images in JSON format from over 50,000 news sources.">
+    <meta name="og:url" content="https://newsapi.org">
+    <meta name="og:site_name" content="News API">
+    <meta name="og:locale" content="en_US">
+    <meta name="og:type" content="website">
+
+    <link rel="canonical" href="https://newsapi.org/sources">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://newsapi.org/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://newsapi.org/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://newsapi.org/favicon-16x16.png">
+    <link rel="manifest" href="https://newsapi.org/manifest.json">
+    <link rel="mask-icon" href="https://newsapi.org/safari-pinned-tab.svg" color="#000000">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./List of news source APIs available - News API_files/tachyons.min.css">
+    <link rel="stylesheet" href="./List of news source APIs available - News API_files/css">
+    <link rel="stylesheet" href="./List of news source APIs available - News API_files/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./List of news source APIs available - News API_files/jquery.jsonview.min.css">
+    <style>
+        .jsonview .prop {
+            color: #000;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./List of news source APIs available - News API_files/ladda-themeless.min.css">
+    <link rel="stylesheet" href="./List of news source APIs available - News API_files/v2.css">
+
+    <script type="text/javascript" async=""
+        src="./List of news source APIs available - News API_files/analytics.js.download"></script>
+    <script async="" src="./List of news source APIs available - News API_files/catynials.js.download"></script>
+    <script src="./List of news source APIs available - News API_files/jquery-2.2.4.min.js.download"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '/js/catynials.js', 'ga');
+
+        ga('create', 'UA-17563040-17', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./List of news source APIs available - News API_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-91285317-5');
+    </script>
+
+    <style type="text/css"></style>
+</head>
+
+<body class="black-60 ma0">
+    <div class="center-l fixed left-0 mh3 mw6-l w-third-l right-0 top-1 z-5" id="alert-container">
+
+    </div>
+
+
+
+
+
+
+    <!-- Top navbar & branding -->
+    <header class="bg-white pv3 bb b--black-10 fixed top-0 left-0 right-0" style="z-index:10;">
+        <div class="w-90 mw8 center flex justify-between items-center">
+            <div class="gs mv0 normal f2 fw5 black-90">
+                <a class="color-inherit no-underline flex justify-center" href="https://newsapi.org/">
+                    <div class="bg-na-blue white" style="letter-spacing:-1px; padding:5px 0 5px 6px;">News<span
+                            class="bg-white na-blue" style="margin:0 3px 0 8px; padding:0 8px;">API</span></div>
+                </a>
+            </div>
+
+            <ul class="list mv0 pl0 flex items-center gs">
+                <li class="dn dib-l mr4">
+                    <a class="no-underline color-inherit dim pv2" href="https://newsapi.org/docs/get-started">Get
+                        started</a>
+                </li>
+                <li class="dn dib-l mr4">
+                    <a class="no-underline color-inherit dim pv2" href="https://newsapi.org/docs">Documentation</a>
+                </li>
+                <li class="dn dib-l mr4">
+                    <a class="no-underline color-inherit dim pv2" href="https://newsapi.org/pricing">Pricing</a>
+                </li>
+                <li class="dib">
+                    <a class="br2 bg-na-blue db dim mw3 mw5-l ph3 pv2 truncate white"
+                        href="https://newsapi.org/account">cusunliem@gmail.com</a>
+                </li>
+                <li class="dn-l dib ml3">
+                    <button id="open-menu-btn" class="color-inherit bn bg-white db f2 ph1 pv0">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="bg-white bb b--black-20 pa2 fixed left-0 right-0 h-100" id="menu"
+                        style="overflow:auto; top:-120%; transition: all 500ms ease-in-out; z-index:20">
+                        <div class="absolute top-2 right-2">
+                            <button id="close-menu-btn" class="color-inherit bn bg-white db f2 ph1 pv0">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="list mv0 pa4 f2">
+                            <li class="mb4">
+                                <a class="no-underline color-inherit dim"
+                                    href="https://newsapi.org/docs/get-started">Get started</a>
+                            </li>
+                            <li class="mb4">
+                                <a class="no-underline color-inherit dim"
+                                    href="https://newsapi.org/docs">Documentation</a>
+                            </li>
+                            <li class="mb4">
+                                <a class="no-underline color-inherit dim" href="https://newsapi.org/pricing">Pricing</a>
+                            </li>
+                            <li class="bt pt4 b--black-10">
+                                <a class="no-underline db dim bg-na-blue pv2 ph3 br2 truncate white"
+                                    href="https://newsapi.org/account">cusunliem@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- END Top navbar & branding -->
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', '#open-menu-btn', function () {
+                $('#menu').css('top', '0');
+            })
+            $(document).on('click', '#close-menu-btn', function () {
+                $('#menu').css('top', '-100%');
+            })
+        });
+    </script>
+
+
+    <main class="mv5 pt3 pt5-l">
+
+        <div class="mw7 w-90 center lh-copy">
+
+            <h1 class="black-90 fw3">News sources</h1>
+
+            <style>
+                .source-tabs a {
+                    align-items: center;
+                    background: rgba(0, 0, 0, 0.05);
+                    bottom: -1px;
+                    border-radius: 3px 3px 0 0;
+                    border-left: 1px solid;
+                    border-top: 1px solid;
+                    border-right: 1px solid;
+                    border-color: rgba(0, 0, 0, 0.1);
+                    color: inherit;
+                    cursor: pointer;
+                    display: flex;
+                    height: 100%;
+                    justify-content: center;
+                    padding: 0.5rem 0;
+                    position: relative;
+                }
+
+                .source-tabs a.selected {
+                    background: #fff;
+                    font-weight: 500;
+                }
+
+                .countries-and-categories,
+                .publishers {
+                    display: none;
+                }
+
+                .countries-and-categories.selected,
+                .publishers.selected {
+                    display: block;
+                }
+            </style>
+            <script>
+                $(document).ready(function () {
+                    $('.source-tabs a').on('click', function () {
+                        $('.source-tabs a').removeClass('selected');
+                        $('.countries-and-categories, .publishers').removeClass('selected');
+
+                        const $this = $(this);
+
+                        $this.addClass('selected');
+                        $('.' + $this.data('btn-for')).addClass('selected');
+                    })
+                })
+            </script>
+
+            <div class="bb b--black-10 flex source-tabs">
+                <div class="f4 ml2 mr2 tc w-50"><a data-btn-for="countries-and-categories" class="selected">Countries
+                        and categories</a></div>
+            </div>
+
+            <div class="countries-and-categories selected">
+                <p class="pb4">We curate a list of top headlines for a range of countries. You can click through for
+                    integration examples.</p>
+
+                <div class="sources-container mb4 center relative">
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/argentina-news-api"
+                            title="Argentina">
+                            <img alt="Argentina flag" class="icon loaded" data-src="/images/flags/ar.svg"
+                                src="./List of news source APIs available - News API_files/ar.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Argentina">
+                                Argentina
+                            </div>
+                            <div><kbd title="id: ar">ar</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/australia-news-api"
+                            title="Australia">
+                            <img alt="Australia flag" class="icon loaded" data-src="/images/flags/au.svg"
+                                src="./List of news source APIs available - News API_files/au.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Australia">
+                                Australia
+                            </div>
+                            <div><kbd title="id: au">au</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/austria-news-api" title="Austria">
+                            <img alt="Austria flag" class="icon loaded" data-src="/images/flags/at.svg"
+                                src="./List of news source APIs available - News API_files/at.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Austria">
+                                Austria
+                            </div>
+                            <div><kbd title="id: at">at</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/belgium-news-api" title="Belgium">
+                            <img alt="Belgium flag" class="icon loaded" data-src="/images/flags/be.svg"
+                                src="./List of news source APIs available - News API_files/be.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Belgium">
+                                Belgium
+                            </div>
+                            <div><kbd title="id: be">be</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/brazil-news-api" title="Brazil">
+                            <img alt="Brazil flag" class="icon loaded" data-src="/images/flags/br.svg"
+                                src="./List of news source APIs available - News API_files/br.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Brazil">
+                                Brazil
+                            </div>
+                            <div><kbd title="id: br">br</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/bulgaria-news-api" title="Bulgaria">
+                            <img alt="Bulgaria flag" class="icon loaded" data-src="/images/flags/bg.svg"
+                                src="./List of news source APIs available - News API_files/bg.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Bulgaria">
+                                Bulgaria
+                            </div>
+                            <div><kbd title="id: bg">bg</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/canada-news-api" title="Canada">
+                            <img alt="Canada flag" class="icon loaded" data-src="/images/flags/ca.svg"
+                                src="./List of news source APIs available - News API_files/ca.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Canada">
+                                Canada
+                            </div>
+                            <div><kbd title="id: ca">ca</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/china-news-api" title="China">
+                            <img alt="China flag" class="icon loaded" data-src="/images/flags/cn.svg"
+                                src="./List of news source APIs available - News API_files/cn.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="China">
+                                China
+                            </div>
+                            <div><kbd title="id: cn">cn</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/colombia-news-api" title="Colombia">
+                            <img alt="Colombia flag" class="icon loaded" data-src="/images/flags/co.svg"
+                                src="./List of news source APIs available - News API_files/co.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Colombia">
+                                Colombia
+                            </div>
+                            <div><kbd title="id: co">co</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/cuba-news-api" title="Cuba">
+                            <img alt="Cuba flag" class="icon loaded" data-src="/images/flags/cu.svg"
+                                src="./List of news source APIs available - News API_files/cu.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Cuba">
+                                Cuba
+                            </div>
+                            <div><kbd title="id: cu">cu</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/czech-republic-news-api"
+                            title="Czech Republic">
+                            <img alt="Czech Republic flag" class="icon loaded" data-src="/images/flags/cz.svg"
+                                src="./List of news source APIs available - News API_files/cz.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Czech Republic">
+                                Czech Republic
+                            </div>
+                            <div><kbd title="id: cz">cz</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/egypt-news-api" title="Egypt">
+                            <img alt="Egypt flag" class="icon loaded" data-src="/images/flags/eg.svg"
+                                src="./List of news source APIs available - News API_files/eg.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Egypt">
+                                Egypt
+                            </div>
+                            <div><kbd title="id: eg">eg</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/france-news-api" title="France">
+                            <img alt="France flag" class="icon loaded" data-src="/images/flags/fr.svg"
+                                src="./List of news source APIs available - News API_files/fr.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="France">
+                                France
+                            </div>
+                            <div><kbd title="id: fr">fr</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/germany-news-api" title="Germany">
+                            <img alt="Germany flag" class="icon loaded" data-src="/images/flags/de.svg"
+                                src="./List of news source APIs available - News API_files/de.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Germany">
+                                Germany
+                            </div>
+                            <div><kbd title="id: de">de</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/greece-news-api" title="Greece">
+                            <img alt="Greece flag" class="icon loaded" data-src="/images/flags/gr.svg"
+                                src="./List of news source APIs available - News API_files/gr.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Greece">
+                                Greece
+                            </div>
+                            <div><kbd title="id: gr">gr</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/hong-kong-news-api"
+                            title="Hong Kong">
+                            <img alt="Hong Kong flag" class="icon loaded" data-src="/images/flags/hk.svg"
+                                src="./List of news source APIs available - News API_files/hk.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Hong Kong">
+                                Hong Kong
+                            </div>
+                            <div><kbd title="id: hk">hk</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/hungary-news-api" title="Hungary">
+                            <img alt="Hungary flag" class="icon loaded" data-src="/images/flags/hu.svg"
+                                src="./List of news source APIs available - News API_files/hu.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Hungary">
+                                Hungary
+                            </div>
+                            <div><kbd title="id: hu">hu</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/india-news-api" title="India">
+                            <img alt="India flag" class="icon loaded" data-src="/images/flags/in.svg"
+                                src="./List of news source APIs available - News API_files/in.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="India">
+                                India
+                            </div>
+                            <div><kbd title="id: in">in</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/indonesia-news-api"
+                            title="Indonesia">
+                            <img alt="Indonesia flag" class="icon loaded" data-src="/images/flags/id.svg"
+                                src="./List of news source APIs available - News API_files/id.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Indonesia">
+                                Indonesia
+                            </div>
+                            <div><kbd title="id: id">id</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/ireland-news-api" title="Ireland">
+                            <img alt="Ireland flag" class="icon loaded" data-src="/images/flags/ie.svg"
+                                src="./List of news source APIs available - News API_files/ie.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Ireland">
+                                Ireland
+                            </div>
+                            <div><kbd title="id: ie">ie</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/israel-news-api" title="Israel">
+                            <img alt="Israel flag" class="icon loaded" data-src="/images/flags/il.svg"
+                                src="./List of news source APIs available - News API_files/il.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Israel">
+                                Israel
+                            </div>
+                            <div><kbd title="id: il">il</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/italy-news-api" title="Italy">
+                            <img alt="Italy flag" class="icon loaded" data-src="/images/flags/it.svg"
+                                src="./List of news source APIs available - News API_files/it.svg"
+                                data-was-processed="true">
+                            <div class="name f3" title="Italy">
+                                Italy
+                            </div>
+                            <div><kbd title="id: it">it</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/japan-news-api" title="Japan">
+                            <img alt="Japan flag" class="icon" data-src="/images/flags/jp.svg">
+                            <div class="name f3" title="Japan">
+                                Japan
+                            </div>
+                            <div><kbd title="id: jp">jp</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/latvia-news-api" title="Latvia">
+                            <img alt="Latvia flag" class="icon" data-src="/images/flags/lv.svg">
+                            <div class="name f3" title="Latvia">
+                                Latvia
+                            </div>
+                            <div><kbd title="id: lv">lv</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/lithuania-news-api"
+                            title="Lithuania">
+                            <img alt="Lithuania flag" class="icon" data-src="/images/flags/lt.svg">
+                            <div class="name f3" title="Lithuania">
+                                Lithuania
+                            </div>
+                            <div><kbd title="id: lt">lt</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/malaysia-news-api" title="Malaysia">
+                            <img alt="Malaysia flag" class="icon" data-src="/images/flags/my.svg">
+                            <div class="name f3" title="Malaysia">
+                                Malaysia
+                            </div>
+                            <div><kbd title="id: my">my</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/mexico-news-api" title="Mexico">
+                            <img alt="Mexico flag" class="icon" data-src="/images/flags/mx.svg">
+                            <div class="name f3" title="Mexico">
+                                Mexico
+                            </div>
+                            <div><kbd title="id: mx">mx</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/morocco-news-api" title="Morocco">
+                            <img alt="Morocco flag" class="icon" data-src="/images/flags/ma.svg">
+                            <div class="name f3" title="Morocco">
+                                Morocco
+                            </div>
+                            <div><kbd title="id: ma">ma</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/netherlands-news-api"
+                            title="Netherlands">
+                            <img alt="Netherlands flag" class="icon" data-src="/images/flags/nl.svg">
+                            <div class="name f3" title="Netherlands">
+                                Netherlands
+                            </div>
+                            <div><kbd title="id: nl">nl</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/new-zealand-news-api"
+                            title="New Zealand">
+                            <img alt="New Zealand flag" class="icon" data-src="/images/flags/nz.svg">
+                            <div class="name f3" title="New Zealand">
+                                New Zealand
+                            </div>
+                            <div><kbd title="id: nz">nz</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/nigeria-news-api" title="Nigeria">
+                            <img alt="Nigeria flag" class="icon" data-src="/images/flags/ng.svg">
+                            <div class="name f3" title="Nigeria">
+                                Nigeria
+                            </div>
+                            <div><kbd title="id: ng">ng</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/norway-news-api" title="Norway">
+                            <img alt="Norway flag" class="icon" data-src="/images/flags/no.svg">
+                            <div class="name f3" title="Norway">
+                                Norway
+                            </div>
+                            <div><kbd title="id: no">no</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/philippines-news-api"
+                            title="Philippines">
+                            <img alt="Philippines flag" class="icon" data-src="/images/flags/ph.svg">
+                            <div class="name f3" title="Philippines">
+                                Philippines
+                            </div>
+                            <div><kbd title="id: ph">ph</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/poland-news-api" title="Poland">
+                            <img alt="Poland flag" class="icon" data-src="/images/flags/pl.svg">
+                            <div class="name f3" title="Poland">
+                                Poland
+                            </div>
+                            <div><kbd title="id: pl">pl</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/portugal-news-api" title="Portugal">
+                            <img alt="Portugal flag" class="icon" data-src="/images/flags/pt.svg">
+                            <div class="name f3" title="Portugal">
+                                Portugal
+                            </div>
+                            <div><kbd title="id: pt">pt</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/romania-news-api" title="Romania">
+                            <img alt="Romania flag" class="icon" data-src="/images/flags/ro.svg">
+                            <div class="name f3" title="Romania">
+                                Romania
+                            </div>
+                            <div><kbd title="id: ro">ro</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/russia-news-api" title="Russia">
+                            <img alt="Russia flag" class="icon" data-src="/images/flags/ru.svg">
+                            <div class="name f3" title="Russia">
+                                Russia
+                            </div>
+                            <div><kbd title="id: ru">ru</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/saudi-arabia-news-api"
+                            title="Saudi Arabia">
+                            <img alt="Saudi Arabia flag" class="icon" data-src="/images/flags/sa.svg">
+                            <div class="name f3" title="Saudi Arabia">
+                                Saudi Arabia
+                            </div>
+                            <div><kbd title="id: sa">sa</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/serbia-news-api" title="Serbia">
+                            <img alt="Serbia flag" class="icon" data-src="/images/flags/rs.svg">
+                            <div class="name f3" title="Serbia">
+                                Serbia
+                            </div>
+                            <div><kbd title="id: rs">rs</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/singapore-news-api"
+                            title="Singapore">
+                            <img alt="Singapore flag" class="icon" data-src="/images/flags/sg.svg">
+                            <div class="name f3" title="Singapore">
+                                Singapore
+                            </div>
+                            <div><kbd title="id: sg">sg</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/slovakia-news-api" title="Slovakia">
+                            <img alt="Slovakia flag" class="icon" data-src="/images/flags/sk.svg">
+                            <div class="name f3" title="Slovakia">
+                                Slovakia
+                            </div>
+                            <div><kbd title="id: sk">sk</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/slovenia-news-api" title="Slovenia">
+                            <img alt="Slovenia flag" class="icon" data-src="/images/flags/si.svg">
+                            <div class="name f3" title="Slovenia">
+                                Slovenia
+                            </div>
+                            <div><kbd title="id: si">si</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/south-africa-news-api"
+                            title="South Africa">
+                            <img alt="South Africa flag" class="icon" data-src="/images/flags/za.svg">
+                            <div class="name f3" title="South Africa">
+                                South Africa
+                            </div>
+                            <div><kbd title="id: za">za</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/south-korea-news-api"
+                            title="South Korea">
+                            <img alt="South Korea flag" class="icon" data-src="/images/flags/kr.svg">
+                            <div class="name f3" title="South Korea">
+                                South Korea
+                            </div>
+                            <div><kbd title="id: kr">kr</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/sweden-news-api" title="Sweden">
+                            <img alt="Sweden flag" class="icon" data-src="/images/flags/se.svg">
+                            <div class="name f3" title="Sweden">
+                                Sweden
+                            </div>
+                            <div><kbd title="id: se">se</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/switzerland-news-api"
+                            title="Switzerland">
+                            <img alt="Switzerland flag" class="icon" data-src="/images/flags/ch.svg">
+                            <div class="name f3" title="Switzerland">
+                                Switzerland
+                            </div>
+                            <div><kbd title="id: ch">ch</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/taiwan-news-api" title="Taiwan">
+                            <img alt="Taiwan flag" class="icon" data-src="/images/flags/tw.svg">
+                            <div class="name f3" title="Taiwan">
+                                Taiwan
+                            </div>
+                            <div><kbd title="id: tw">tw</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/thailand-news-api" title="Thailand">
+                            <img alt="Thailand flag" class="icon" data-src="/images/flags/th.svg">
+                            <div class="name f3" title="Thailand">
+                                Thailand
+                            </div>
+                            <div><kbd title="id: th">th</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/turkey-news-api" title="Turkey">
+                            <img alt="Turkey flag" class="icon" data-src="/images/flags/tr.svg">
+                            <div class="name f3" title="Turkey">
+                                Turkey
+                            </div>
+                            <div><kbd title="id: tr">tr</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/uae-news-api" title="UAE">
+                            <img alt="UAE flag" class="icon" data-src="/images/flags/ae.svg">
+                            <div class="name f3" title="UAE">
+                                UAE
+                            </div>
+                            <div><kbd title="id: ae">ae</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/ukraine-news-api" title="Ukraine">
+                            <img alt="Ukraine flag" class="icon" data-src="/images/flags/ua.svg">
+                            <div class="name f3" title="Ukraine">
+                                Ukraine
+                            </div>
+                            <div><kbd title="id: ua">ua</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/uk-news-api" title="United Kingdom">
+                            <img alt="United Kingdom flag" class="icon" data-src="/images/flags/gb.svg">
+                            <div class="name f3" title="United Kingdom">
+                                United Kingdom
+                            </div>
+                            <div><kbd title="id: gb">gb</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/us-news-api" title="United States">
+                            <img alt="United States flag" class="icon" data-src="/images/flags/us.svg">
+                            <div class="name f3" title="United States">
+                                United States
+                            </div>
+                            <div><kbd title="id: us">us</kbd></div>
+                        </a>
+                    </div>
+                    <div class="source fl-l w-50-l mb2">
+                        <a class="db no-underline grow" href="https://newsapi.org/s/venuzuela-news-api"
+                            title="Venuzuela">
+                            <img alt="Venuzuela flag" class="icon" data-src="/images/flags/ve.svg">
+                            <div class="name f3" title="Venuzuela">
+                                Venuzuela
+                            </div>
+                            <div><kbd title="id: ve">ve</kbd></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-na-coal">
+        <div class="mw7 w-80 mb3 flex-ns center white-80 fw1">
+            <div class="w-third-ns">
+                <h6 class="f4 fw5 mb2 white">News API</h6>
+                <div class="mv3"><a class="white-60 no-underline" href="https://newsapi.org/docs/get-started">Get
+                        started</a></div>
+                <div class="mv3"><a class="white-60 no-underline" href="https://newsapi.org/docs">Documentation</a>
+                </div>
+                <div class="mv3"><a class="white-60 no-underline" href="https://newsapi.org/sources">News sources</a>
+                </div>
+                <div class="mv3"><a class="white-60 no-underline" href="https://newsapi.org/pricing">Pricing</a></div>
+                <div class="mv3"><a class="white-60 no-underline" href="https://newsapi.org/s/google-news-api">Google
+                        News API</a></div>
+            </div>
+            <div class="w-third-ns">
+                <h6 class="f4 fw5 mb2 white">Company</h6>
+                <!--<div class="mv3">
+                <div style="width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                    <a class="white-60 no-underline" href="/blog/">Blog</a> - <a id="blog-latest-article-title" class="white-80"></a>
+                </div>
+            </div>-->
+                <div class="mv3"><a class="white-60 no-underline" href="https://newsapi.org/privacy"
+                        target="_blank">Privacy policy</a></div>
+                <div class="mv3"><a class="white-60 no-underline" href="https://newsapi.org/terms" target="_blank">Terms
+                        of service</a></div>
+            </div>
+            <div class="w-third-ns tr">
+                <h6 class="f4 fw5 mb2 white">Support</h6>
+                <div class="mv3"><a class="color-inherit no-underline" href="mailto:support@newsapi.org">Contact</a>
+                </div>
+                <div class="mv3"><a class="color-inherit no-underline" href="https://twitter.com/NewsAPIorg"
+                        target="_blank">Twitter</a></div>
+                <div class="mv3">&nbsp;</div>
+                <div class="mv3"><a class="color-inherit no-underline" href="https://github.com/News-API-gh"
+                        target="_blank"><i class="fa fa-github"></i> Github</a></div>
+            </div>
+        </div>
+        <div>
+            <p class="tc white f7 ma0 pv3"></p>
+        </div>
+
+        <script>
+        //const $blogLatestArticleTitle = $('#blog-latest-article-title');
+        //$.getJSON('https://newsapi.org/blog/feed/json', function (response) {
+        //    $blogLatestArticleTitle.text(response.items[0].title);
+        //    $blogLatestArticleTitle.attr('href', response.items[0].url);
+        //})
+        </script>
+    </footer>
+
+    <script>
+            (function (w, d) {
+                var b = d.getElementsByTagName('body')[0];
+                var s = d.createElement("script"); s.async = true;
+                var v = !("IntersectionObserver" in w) ? "8.5.2" : "10.3.5";
+                s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+                w.lazyLoadOptions = {}; // Your options here. See "recipes" for more information about async.
+                b.appendChild(s);
+            }(window, document));
+    </script>
+    <script async="" src="./List of news source APIs available - News API_files/lazyload.min.js.download"></script>
+
+    <script src="./List of news source APIs available - News API_files/jquery.jsonview.min.js.download"></script>
+    <script src="./List of news source APIs available - News API_files/js.cookie.min.js.download"></script>
+    <script src="./List of news source APIs available - News API_files/spin.min.js.download"></script>
+    <script src="./List of news source APIs available - News API_files/ladda.js.download"></script>
+    <script src="./List of news source APIs available - News API_files/v2.js.download"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+﻿$(document).ready(function () {
+    // top alerts
+    $(document).on('click', 'body', function () {
+        $('#alert-container .alert').fadeOut(400, function () {
+            this.remove();
+        });
+    });
+
+    // anchor offset
+    // The function actually applying the offset
+    function offsetAnchor() {
+        if (location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 150);
+        }
+    }
+
+    // Captures click events of all <a> elements with href starting with #
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        // Click events are captured before hashchanges. Timeout
+        // causes offsetAnchor to be called after the page jump.
+        window.setTimeout(function () {
+            offsetAnchor();
+        }, 5);
+    });
+
+    // Set the offset when entering page with hash present in the url
+    window.setTimeout(offsetAnchor, 5);
+
+    // Sets up ladda loading buttons
+    Ladda.bind('button[type=submit], .js-loading-on-click');
+})
+
