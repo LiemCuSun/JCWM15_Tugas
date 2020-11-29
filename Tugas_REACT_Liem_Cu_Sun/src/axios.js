@@ -13,14 +13,6 @@ let idCountry = ["id"]
 let apiKey = "&apiKey=387e91f332f345c0b8664a02b22f2c4a"
 let tempCountry = ["id"]
 let arrValue = 0
-let Category = [
-    { "data": "business" },
-    { "data": "entertainment" },
-    { "data": "health" }, 
-    { "data": "science" },
-    { "data": "sports" }, 
-    { "data": "technology" }
-]
 let arrCategory = ""
 let categoryString = "&category="
 
@@ -29,34 +21,80 @@ class Axios extends React.Component {
         super(props)
         this.state = {
             dataKu: [],
-            countryID: [],
-            categoryID: []
+            countryID: [
+                "be",
+                "bg",
+                "br",
+                "ca",
+                "ch",
+                "cn",
+                "co",
+                "cu",
+                "cz",
+                "de",
+                "eg",
+                "fr",
+                "gb",
+                "gr",
+                "hk",
+                "hu",
+                "id",
+                "ie",
+                "il",
+                "in",
+                "it",
+                "jp",
+                "kr",
+                "lt",
+                "lv",
+                "ma",
+                "mx",
+                "my",
+                "ng",
+                "nl",
+                "no",
+                "nz",
+                "ph",
+                "pl",
+                "pt",
+                "ro",
+                "rs",
+                "ru",
+                "sa",
+                "se",
+                "sg",
+                "si",
+                "sk",
+                "th",
+                "tr",
+                "tw",
+                "ua",
+                "us",
+                "ve",
+                "za",
+            ],
+            categoryID: [
+                "business",
+                "entertainment",
+                "health",
+                "science",
+                "sports",
+                "technology",
+            ]
         }
     }
 
     componentDidMount() {
-        axios.get(URL + tempCountry[arrValue] + apiKey)
+        axios.get(URL + this.state.countryID[arrValue] + apiKey)
             .then((res) => {
                 console.log(res)
                 this.setState({ dataKu: res.data.articles })
             })
             .catch((err) => console.log(err))
-        axios.get("https://newsapi.org/v2/sources?apiKey=387e91f332f345c0b8664a02b22f2c4a")
-            .then((res1) => {
-                console.log(res1)
-                this.setState({ countryID: res1.data.sources })
-            })
-            .catch((err1) => console.log(err1))
-        axios.get(Category)
-            .then((res2) => {
-                console.log(res2)
-                this.setState({ categoryID: res2.data})
-            })
-            .catch((err1) => console.log(err1))
     }
 
     updateLink() {
-        axios.get(URL + tempCountry[arrValue] + categoryString + Category[arrCategory] + apiKey)
+        axios.get(URL + this.state.countryID[arrValue] + categoryString + this.state.categoryID[arrCategory] + apiKey)
             .then((res) => {
                 console.log(res)
                 this.setState({ dataKu: res.data.articles })
@@ -84,8 +122,7 @@ class Axios extends React.Component {
     dropDownCountry = () => {
         return this.state.countryID.map((item, index) => {
             return (
-                tempCountry.push(item.country),
-                <NavDropdown.Item onClick={() => arrValue = index}>{tempCountry[index]}</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => arrValue = index}>{this.state.countryID[index]}</NavDropdown.Item>
             )
         })
     }
@@ -93,7 +130,7 @@ class Axios extends React.Component {
     dropDownCategory = () => {
         return this.state.categoryID.map((item, index) => {
             return (
-                <NavDropdown.Item onClick={() => arrCategory = index}>{item.data}</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => arrCategory = index}>{this.state.categoryID[index]}</NavDropdown.Item>
             )
         })
     }
@@ -122,7 +159,7 @@ class Axios extends React.Component {
                     <NavDropdown title="Category" id="basic-nav-dropdown">
                         {this.dropDownCategory()}
                     </NavDropdown>
-                    <Button onClick={() => {this.updateLink()}}>OK</Button>
+                    <Button onClick={() => { this.updateLink() }}>OK</Button>
                 </div>
                 <div style={{ display: "flex", flexWrap: "wrap" }}>
                     {this.showCard()}
