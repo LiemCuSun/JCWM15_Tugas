@@ -1,0 +1,22 @@
+#headerTitle{
+    padding: 5% 15%;
+    text-align: center;
+}
+
+#layoutTable{
+    padding: 0% 10%;
+    padding-bottom: 5%
+}
+
+#tableOuter{
+    text-align: center;
+    border: 10px solid black;
+}
+
+#theadJsonTable{
+    border: 5px solid black;
+}
+
+#tBodyJsonTable{
+    text-align: left;
+}
