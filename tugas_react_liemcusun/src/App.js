@@ -12,9 +12,26 @@ import NotFound from './page/404_page'
 import axios from './page/axios'
 import tableJSON from './page/table_JSON'
 import TabelJson from './page/More_Action_JSON'
+import Login from './page/login'
+import signUp from './page/Sign_Up'
+import Counter from "./page/counter_page"
 
+// NOTE ini untuk keep log in
+import Axios from 'axios'
+
+// NOTE import action untuk log in
+import {login} from "./action"
+
+// NOTE import connect untuk aktifin fuction dari redux
+import {connect} from "react-redux"
 
 class App extends React.Component {
+  componentDidMount() {
+    Axios.get(`http://localhost:2000/users?username=${localStorage.username}`)
+    .then((res) => {
+      this.props.login(res.data[0])})
+      .catch((err) => console.log(err))
+  }
   render() {
     return (
       <div> 
@@ -27,6 +44,9 @@ class App extends React.Component {
           <Route path='/axios' component={axios} />
           <Route path='/table-json' component={tableJSON} />
           <Route path='/more-action-json' component={TabelJson} />
+          <Route path='/login' component={Login} />
+          <Route path='/sign-up' component={signUp} />
+          <Route path='/counter-reducer' component={Counter} />
           <Route path='*' component={NotFound} />
           </Switch>
       </div>
@@ -35,4 +55,4 @@ class App extends React.Component {
 }
 
 
-export default App;
+export default connect(null, {login}) (App);

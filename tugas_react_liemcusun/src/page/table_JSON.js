@@ -15,7 +15,7 @@ class tableJSON extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get('http://localhost:2000/users')
+        Axios.get('http://localhost:2000/table_JSON')
             .then((res) => {
                 console.log(res.data)
                 this.setState({ dbUsers: res.data })
@@ -88,14 +88,14 @@ class tableJSON extends React.Component {
         let last_name = this.refs.lastname.value
         let email = this.refs.email.value
         console.log(first_name, last_name, email)
-        Axios.post('http://localhost:2000/users', {
+        Axios.post('http://localhost:2000/table_JSON', {
             first_name,
             last_name,
             email
         })
             .then((res) => {
                 console.log(res.data)
-                Axios.get('http://localhost:2000/users')
+                Axios.get('http://localhost:2000/table_JSON')
                     .then((res) => {
                         console.log(res.data)
                         this.setState({ dbUsers: res.data })
@@ -106,10 +106,10 @@ class tableJSON extends React.Component {
     }
 
     handleDelete = (index) => {
-        Axios.delete(`http://localhost:2000/users/${index}`)
+        Axios.delete(`http://localhost:2000/table_JSON/${index}`)
             .then((res) => {
                 console.log(res.data)
-                Axios.get('http://localhost:2000/users')
+                Axios.get('http://localhost:2000/table_JSON')
                     .then((res) => {
                         console.log(res.data)
                         this.setState({ dbUsers: res.data })
@@ -121,14 +121,14 @@ class tableJSON extends React.Component {
 
     handleEdit = (index) => {
         this.tableInput(index)
-        Axios.put(`http://localhost:2000/users/${index}`, {
+        Axios.put(`http://localhost:2000/table_JSON/${index}`, {
             first_name: 'Rakha',
             last_name: 'Adhi',
             email: 'rakhaa34@gmail.com'
         })
             .then((res) => {
                 console.log(res.data)
-                Axios.get('http://localhost:2000/users')
+                Axios.get('http://localhost:2000/table_JSON')
                     .then((res) => {
                         console.log(res.data)
                         this.setState({ dbUsers: res.data })

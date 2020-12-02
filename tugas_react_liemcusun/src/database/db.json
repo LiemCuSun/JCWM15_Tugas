@@ -1,5 +1,5 @@
 {
-  "users": [
+  "table_JSON": [
     {
       "first_name": "Rakha",
       "last_name": "Adhi",
@@ -13,16 +13,126 @@
       "id": 12
     },
     {
-      "first_name": "Liem",
-      "last_name": "Sun",
-      "email": "cusunliem@gmail.com",
-      "id": 15
-    },
-    {
       "first_name": "Rakha",
       "last_name": "Adhi",
       "email": "rakhaa34@gmail.com",
+      "id": 15
+    },
+    {
+      "first_name": "Liem",
+      "last_name": "Sun",
+      "email": "cusunliem@gmail.com",
       "id": 16
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Liem Cu Sun",
+      "password": "1234",
+      "email": "cusunliem@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "1234",
+      "email": "admin@gmail.com"
+    },
+    {
+      "id": 3,
+      "username": "person1",
+      "password": "1234",
+      "email": "person1@gmail.com"
+    },
+    {
+      "id": 4,
+      "username": "person2",
+      "password": "1234",
+      "email": "person2@gmail.com"
+    },
+    {
+      "id": 5,
+      "username": "person3",
+      "password": "1234",
+      "email": "person3@gmail.com"
+    },
+    {
+      "username": "LiemCuSun",
+      "password": "1234",
+      "email": "cusunliem1@gmail.com",
+      "id": 6
+    },
+    {
+      "username": "Anna",
+      "password": "1234",
+      "email": "anna@gmail.com",
+      "id": 7
+    },
+    {
+      "username": "Betha",
+      "password": "1234",
+      "email": "beta@gmail.com",
+      "id": 8
+    },
+    {
+      "username": "abcd",
+      "password": "1234",
+      "email": "abcd@gmail.com",
+      "id": 9
+    },
+    {
+      "username": "test",
+      "password": "1234",
+      "email": "test@gmail.com",
+      "id": 10
+    },
+    {
+      "username": "test2",
+      "password": "1234",
+      "email": "test2@gmail.com",
+      "id": 11
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "id": 12
+    },
+    {
+      "username": "LCS",
+      "password": "1234",
+      "email": "cusunliem@gmail.com",
+      "id": 13
+    },
+    {
+      "username": "LiemCuSun",
+      "password": "1234",
+      "email": "cusunliem1@gmail.com",
+      "id": 14
+    },
+    {
+      "username": "elon",
+      "password": "1234",
+      "email": "elonmusk@gmail.com",
+      "id": 15
+    },
+    {
+      "username": "elon",
+      "password": "1234",
+      "email": "elonmusk@gmail.com",
+      "id": 16
+    },
+    {
+      "username": "elon",
+      "password": "1234",
+      "email": "elonmusk@gmail.com",
+      "id": 17
+    },
+    {
+      "username": "ariana",
+      "password": "1234",
+      "email": "arianagrande@gmail.com",
+      "id": 18
     }
   ]
 }
